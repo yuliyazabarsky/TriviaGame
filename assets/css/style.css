@@ -1,0 +1,48 @@
+body {
+    /* background-color: bisque; */
+    margin: 0 auto;
+    text-align: center;
+    color: rebeccapurple;
+    font-family: fantasy;
+    background-image: url(https://kahoot.com/files/2019/02/explore-Trivia-and-general-knowdledge.png);
+}
+
+h1 {
+    padding-top: 30px;
+    /* background-color: rgb(0, 102, 255); */
+    font-weight: bold;
+    font-size: 50px;
+    /* color: white; */
+}
+
+p {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+hr {
+    border: solid 1px rebeccapurple;
+}
+
+#display {
+    padding-top: 20px;
+    /* font-weight: bold; */
+    font-size: 30px;
+
+}
+
+#question {
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.container {
+    /* border: solid 1px rebeccapurple; */
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: antiquewhite;
+    width: 930px;
+}
