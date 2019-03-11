@@ -109,16 +109,24 @@
         function createtriviaqs() {
             // answered = true;
 
-            $(".question").html("<h2>" + triviaqs + "</h2>");
+            // $(".question").html("<h2>");
             for (var i = 0; i < triviaqs.length; i++) {
-                var options = $("<div>");
-                options.text(triviaqs.options[i]);
-                options.attr({
-                    "data-index": i
-                });
-                options.addClass("thisChoice");
-                $(".options").append(options);
+                var question = $("<div>");
+                question.text(triviaqs[i].question);
+                $(".question").append(question);
 
+                for (var j = 0; j < triviaqs[i].options.length; j++) {
+                    // var options = $("<input type = 'radio' name = 'option' value = 'a' >" + "a");
+                    // options.text(triviaqs[i].options[j]);
+                    // options.addClass("options");
+                    $(".question").append("<input type = 'radio' name = 'option' value = '" + triviaqs[i].options[j] + "' >" + triviaqs[i].options[j]);
+
+                    // <input type="radio"></input>
+                    // <input type="radio" name="gender" value="male"> Male<br>
+                    // </br>
+                }
+                //       =================
+                //    if target radio value  triviaqs[i].correct 
             };
         };
         createtriviaqs();
